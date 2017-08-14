@@ -1,82 +1,83 @@
-#main-slider {
+section#main-slider {
     box-shadow: -2px 2px 10px 1px rgba(0, 0, 0, 0.34);
-}
-
-.carousel-cell {
-    width: 100%;
-    height: 525px;
-    margin-right: 10px;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-    background-position: center;
-    background-size: cover;
-    border-radius: 0;
-}
-
-.flickity-prev-next-button {
-    display: none;
-}
-
-.flickity-page-dots {
-    bottom: 25px;
-    .is-selected {
-        border: 3px solid white;
-        box-sizing: border-box;
-        background-color: black;
+    .carousel-cell {
+        width: 100%;
+        height: 525px;
+        margin-right: 10px;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+        background-position: center;
+        background-size: cover;
+        border-radius: 0;
     }
-    .dot {
-        width: 15px;
-        height: 15px;
+    .flickity-prev-next-button {
+        display: none;
     }
-}
-
-.cell-text {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: $futura-font;
-    &.light {
-        color: white;
+    .flickity-page-dots {
+        bottom: 25px;
+        .is-selected {
+            border: 3px solid white;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        .dot {
+            width: 15px;
+            height: 15px;
+        }
     }
-    &.dark {
-        color: black;
-    }
-    a {
-        color: inherit;
-    }
-    h1 {
-        font-weight: bold;
-        color: inherit;
-        font-size: 2.3rem;
-        margin-bottom: 0.5em;
-    }
-    p {
-        color: inherit;
-        font-weight: light;
-    }
-    .btn-row {
-        margin-top: 1.7em;
+    .cell-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: $futura-font;
+        &.light {
+            color: white;
+        }
+        &.dark {
+            color: black;
+        }
+        a {
+            color: inherit;
+        }
+        h1 {
+            font-weight: bold;
+            color: inherit;
+            font-size: 2.3rem;
+            margin-bottom: 0.5em;
+        }
+        p {
+            color: inherit;
+            font-weight: light;
+        }
+        .btn-row {
+            margin-top: 1.7em;
+        }
     }
 }
 
-span.button {
-    height: 30px;
-    padding: 6px 10px;
-    width: fit-content;
-    box-sizing: border-box;
-    font-size: 10pt;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 3px;
-    &.light {
-        background: black;
-        color: white;
-        border: 2px solid white;
+section#clientes {
+    height: 98px;
+    margin: 0 20px;
+    margin-top: 50px;
+    .footer-carousel {
+        .cliente {
+            margin: 0 30px;
+            display: flex;
+            justify-content: center;
+            img {
+                height: initial;
+            }
+        }
     }
-    &.dark {
-        background: white;
-        color: black;
-        border: 2px solid black;
+    .flickity-page-dots {
+        display: none;
+    }
+    .flickity-prev-next-button {
+        display: none;
+    }
+    .flickity-slider {
+        display: flex;
+        align-items: center;
     }
 }
