@@ -16,9 +16,3 @@ setTimeout(function() {
     horizontalOrder: true,
   })
 }, 100)
-
-$('.carousel').flickity({
-  // options
-  cellAlign: 'center',
-  contain: true,
-})

@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify')
 var minify = require('gulp-minify-css')
 var browserSync = require('browser-sync').create()
 var autoprefixer = require('gulp-autoprefixer')
+var ghpages = require('gh-pages')
 
 //script paths
 var jsFiles = 'app/js-develop/*.js',
@@ -53,4 +54,10 @@ gulp.task('watch', ['browserSync', 'sass', 'scripts'], function() {
   gulp.watch(cssFiles, ['sass', browserSync.reload])
   gulp.watch(jsFiles, ['scripts', browserSync.reload])
   gulp.watch(htmlFiles, browserSync.reload)
+})
+
+gulp.task('publish', function() {
+  ghpages.publish('app', function(err) {
+    console.log(err)
+  })
 })
