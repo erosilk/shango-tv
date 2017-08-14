@@ -1,0 +1,27 @@
+section#footer {
+    display: flex;
+    align-items: center;
+    min-height: 175px;
+    background-color: black;
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        font-family: Raleway;
+        span:first-child {
+            color: white;
+        }
+        span:not(:first-child) {
+            color: #7f7f7f;
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        img {
+            height: 25px;
+        }
+        .social-links ul {
+            margin: 0
+        }
+    }
+}

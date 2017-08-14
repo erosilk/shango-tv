@@ -26,18 +26,6 @@
         display: inline-flex;
         display: -ms-flexbox;
         float: right;
-        .social-links ul {
-            margin-top: 30px;
-            display: inline-flex;
-        }
-        ul li {
-            list-style: none;
-            font-size: 22px;
-            color: $navbar-links-color;
-            a {
-                color: inherit;
-            }
-        }
     }
 }
 

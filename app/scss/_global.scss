@@ -23,3 +23,17 @@ span.button {
         border: 2px solid black;
     }
 }
+
+.social-links ul {
+    margin-top: 30px;
+    display: inline-flex;
+}
+
+ul li {
+    list-style: none;
+    font-size: 22px;
+    color: $navbar-links-color;
+    a {
+        color: inherit;
+    }
+}
