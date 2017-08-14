@@ -2,3 +2,24 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+span.button {
+    height: 30px;
+    padding: 6px 10px;
+    width: fit-content;
+    box-sizing: border-box;
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3px;
+    &.light {
+        background: black;
+        color: white;
+        border: 2px solid white;
+    }
+    &.dark {
+        background: white;
+        color: black;
+        border: 2px solid black;
+    }
+}

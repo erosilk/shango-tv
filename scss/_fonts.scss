@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-$futura-font: Futura,
-"Trebuchet MS",
-Arial,
-sans-serif;
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/futura/medium/FuturaStd-Medium.eot');
+    src: url('fonts/futura/medium/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/futura/medium/FuturaStd-Medium.woff') format('woff'), url('fonts/futura/medium/FuturaStd-Medium.ttf') format('truetype'), url('fonts/futura/medium/FuturaStd-Medium.svg#HelveticaNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/futura/bold/FuturaStd-Bold.eot');
+    src: url('fonts/futura/bold/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/futura/bold/FuturaStd-Bold.woff') format('woff'), url('fonts/futura/bold/FuturaStd-Bold.ttf') format('truetype'), url('fonts/futura/bold/FuturaStd-Bold.svg#HelveticaNeueRegular') format('svg');
+    font-weight: 700;
+    font-style: normal;
 }
