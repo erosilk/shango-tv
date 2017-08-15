@@ -49,6 +49,7 @@
     height: $navbar-height;
     padding: 31.5px 37px;
     border-left: 1px solid $light-gray;
+    cursor: pointer;
 }
 
 .menu-toggle-icon {
@@ -106,6 +107,7 @@
         font-size: 23px;
         margin-left: 35px;
         color: black;
+        cursor: pointer;
     }
 }
 

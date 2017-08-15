@@ -12,8 +12,13 @@ function squarify() {
   var width = $('.thumb').css('width')
   $('.thumb').css('height', width)
 }
-doResizing()
-squarify()
+
+$(document).ready(function() {
+  setTimeout(function() {
+    doResizing()
+    squarify()
+  }, 200)
+})
 
 var windowResize = _.debounce(doResizing, 200)
 

@@ -14,7 +14,7 @@ $.fn.extend({
   },
 })
 
-$('.menu-toggle-icon').on('click', function() {
+$('.menu-btn').on('click', function() {
   if ($('.menu').css('display') === 'none') {
     $('.menu').css('display', 'block')
     $('.menu').animateCss('slideInRight')
@@ -41,8 +41,13 @@ function squarify() {
   var width = $('.thumb').css('width')
   $('.thumb').css('height', width)
 }
-doResizing()
-squarify()
+
+$(document).ready(function() {
+  setTimeout(function() {
+    doResizing()
+    squarify()
+  }, 200)
+})
 
 var windowResize = _.debounce(doResizing, 200)
 

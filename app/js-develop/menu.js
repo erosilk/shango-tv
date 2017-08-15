@@ -14,7 +14,7 @@ $.fn.extend({
   },
 })
 
-$('.menu-toggle-icon').on('click', function() {
+$('.menu-btn').on('click', function() {
   if ($('.menu').css('display') === 'none') {
     $('.menu').css('display', 'block')
     $('.menu').animateCss('slideInRight')

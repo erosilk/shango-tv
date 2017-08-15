@@ -1,14 +1,14 @@
 section#contacto {
     .info {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
         justify-content: center;
         height: 100%;
         img {
             margin: 10px 0;
         }
-        img:first-child {
+        .telimg {
             margin-top: 67px;
         }
     }
