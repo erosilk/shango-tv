@@ -37,3 +37,23 @@ ul li {
         color: inherit;
     }
 }
+
+.icon-youtube-play {
+    font-size: 13px;
+    padding: 1.4px;
+    color: white;
+    background-color: #cccccc;
+    border-radius: 100%;
+    height: 21px;
+    width: 21px;
+}
+
+.circle-yt {
+    >a {
+        display: flex;
+    }
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

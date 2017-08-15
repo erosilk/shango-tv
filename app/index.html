@@ -15,36 +15,80 @@
 </head>
 
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar navbar-fixed">
     <div class="left">
       <img src="img/nav/logo.png" alt="" class="navbar-brand">
     </div>
     <div class="right">
+      <div class="menu-expanded">
+        <div class="social-links">
+          <ul>
+            <li><a href="http://facebook.com/" target="_blank">
+                  <i class="icon-facebook-circled"></i></a></li>
+            <li><a href="http://facebook.com/" target="_blank"><i class="icon-twitter-circled"></i></a></li>
+            <li><a href="http://facebook.com/" target="_blank"><i class="icon-vimeo-circled"></i></a>
+              </a>
+            </li>
+            <li class="circle-yt"><a href="http://facebook.com/" target="_blank"><i class="icon-youtube-play"></i></a></li>
+          </ul>
+        </div>
+        <div class="lang-selector">
+          <span class="selected">English</span> |
+          <span>Spanish</span>
+        </div>
+
+      </div>
+      <div class="menu-btn">
+        <span class="menu-toggle-icon"></span>
+      </div>
+    </div>
+
+  </nav>
+  <div class="menu">
+    <a href="#"><i class="icon-cancel menu-close"></i></a>
+    <ul>
+      <a href="#">
+        <li class="selected">HOME</li>
+      </a>
+      <a href="#">
+        <li>QUIENES SOMOS</li>
+      </a>
+      <a href="#">
+        <li>PROYECTOS</li>
+      </a>
+      <a href="#">
+        <li>CLIENTES</li>
+      </a>
+      <a href="#">
+        <li>CONTACTO</li>
+      </a>
+    </ul>
+    <div class="menu-expanded">
       <div class="social-links">
         <ul>
           <li><a href="http://facebook.com/" target="_blank">
-            <i class="icon-facebook-circled"></i></a></li>
+                      <i class="icon-facebook-circled"></i></a></li>
           <li><a href="http://facebook.com/" target="_blank"><i class="icon-twitter-circled"></i></a></li>
           <li><a href="http://facebook.com/" target="_blank"><i class="icon-vimeo-circled"></i></a>
             </a>
           </li>
-          <li><a href="http://facebook.com/" target="_blank"><i class="icon-vimeo-circled"></i></a></li>
+          <li class="circle-yt"><a href="http://facebook.com/" target="_blank"><i class="icon-youtube-play"></i></a></li>
         </ul>
       </div>
       <div class="lang-selector">
         <span class="selected">English</span> |
         <span>Spanish</span>
       </div>
-      <div class="menu-btn">
-        <span class="menu-toggle-icon"></span>
-      </div>
     </div>
-  </nav>
-  <div class="nav-margin"></div>
 
+  </div>
+  <div class="nav-margin"></div>
+  <!-- /NAVBAR -->
+  <!-- MAIN SLIDER -->
   <section id="main-slider" class="carousel">
     <div class="carousel-cell" style="background: url('../img/nav/slides/01.png') no-repeat center; background-size:cover;">
-      <div class="cell-text light col-sm-12 col-md-6 offset-md-4">
+      <div class="cell-text light col-sm-9 offset-sm-3 col-12 col-md-6 offset-md-4">
         <h1>Somos una usina de creación sin límites de formatos ni medios.</h1>
         <p>Nuestro ADN es un mix entre marketing, innovación y arte. Creamos campañas, ideas y acciones que trascienden.
         </p>
@@ -55,7 +99,7 @@
       </div>
     </div>
     <div class="carousel-cell" style="background: url('../img/nav/slides/02.png') no-repeat;">
-      <div class="cell-text dark col-sm-12 col-md-6 offset-md-4">
+      <div class="cell-text dark col-sm-9 offset-sm-3 col-12 col-md-6 offset-md-4">
         <h1>Somos una usina de creación sin límites de formatos ni medios.</h1>
         <p>Nuestro ADN es un mix entre marketing, innovación y arte. Creamos campañas, ideas y acciones que trascienden.
         </p>
@@ -66,92 +110,120 @@
       </div>
     </div>
   </section>
+  <!-- /MAIN SLIDER -->
+  <!-- PROYECTOS -->
   <section id="home-proyectos">
     <div class="proyectos-header">
       <h2>NUESTROS PROYECTOS</h2>
     </div>
     <ul class="proyectos-list">
-      <li class="proyecto no-bg col-sm-12 col-md-4 col-lg-3">
-        <div class="info-container">
-          <span class="date"><strong>Quilmes</strong> | 2015</span>
-          <h3>Campaña Quilmes hostel</h3>
-          <p>
-            Somos una Usina de Creación sin límites de formatos ni medios. Nuestro ADN es un mix entre marketing, innovación y arte.</p>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/03.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/06.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/08.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/01.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/04.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto no-bg col-sm-12 col-md-4 col-lg-3">
-        <div class="info-container">
-          <span class="date"><strong>Quilmes</strong> | 2015</span>
-          <h3>Campaña Quilmes hostel</h3>
-          <p>
-            Somos una Usina de Creación sin límites de formatos ni medios. Nuestro ADN es un mix entre marketing, innovación y arte.</p>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/09.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/02.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/05.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/07.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
-      <li class="proyecto hidden thumb col-sm-12 col-md-4 col-lg-3" style="background:url('../img/thumb/10.png') center no-repeat; background-size:cover">
-        <div class="info-container">
-          <span class="date"><strong>Personal</strong> | 2013</span>
-          <h3>Campaña lanzamiento BB z10</h3>
-        </div>
-      </li>
+      <a href="#">
+        <li class="proyecto no-bg col-sm-6 col-12 col-md-4 col-lg-3">
+          <div class="info-container">
+            <span class="date"><strong>Quilmes</strong> | 2015</span>
+            <h3>Campaña Quilmes hostel</h3>
+            <p>
+              Somos una Usina de Creación sin límites de formatos ni medios. Nuestro ADN es un mix entre marketing, innovación y arte.</p>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/03.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/06.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/08.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/01.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/04.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto no-bg col-sm-6 col-12 col-md-4 col-lg-3">
+          <div class="info-container">
+            <span class="date"><strong>Quilmes</strong> | 2015</span>
+            <h3>Campaña Quilmes hostel</h3>
+            <p>
+              Somos una Usina de Creación sin límites de formatos ni medios. Nuestro ADN es un mix entre marketing, innovación y arte.</p>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/09.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/02.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/05.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/07.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
+      <a href="#">
+        <li class="proyecto hidden thumb col-sm-6 col-12 col-md-4 col-lg-3" style="background:url('../img/thumb/10.png') center no-repeat; background-size:cover">
+          <div class="info-container">
+            <span class="date"><strong>Personal</strong> | 2013</span>
+            <h3>Campaña lanzamiento BB z10</h3>
+          </div>
+        </li>
+      </a>
     </ul>
     <div class="proyectos-vermas">
       <a href="http://#"><span class="button dark">VER MÁS PROYECTOS</span></a>
     </div>
   </section>
+  <!-- /PROYECTOS -->
+  <!-- DESTACADOS -->
   <section id="destacados">
     <a href="http://#">
       <div class="item-destacado">
@@ -169,13 +241,17 @@
       </div>
     </a>
   </section>
+  <!-- /DESTACADOS -->
+  <!-- CONTACTO -->
   <section id="contacto">
     <div class="info">
       <img src="img/nav/oficina.png" alt="Información de contacto">
-      <img src="img/nav/nro.png" alt="Información de contacto">
-      <img src="img/nav/mail.png" alt="Información de contacto">
+      <a href="tel:+541145524503"><img src="img/nav/nro.png" alt="Información de contacto"></a>
+      <a href="mailto:info@vivashango.com"><img src="img/nav/mail.png" alt="Información de contacto"></a>
     </div>
   </section>
+  <!-- /CONTACTO -->
+  <!-- CLIENTES -->
   <section id="clientes">
     <div class="footer-carousel">
       <div class="cliente"><img src="img/nav/clientes/01.png" alt=""></div>
@@ -189,12 +265,14 @@
       <div class="cliente"><img src="img/nav/clientes/08.png" alt=""></div>
     </div>
   </section>
+  <!-- /CLIENTES -->
+  <!-- FOOTER -->
   <section id="footer">
-    <div class="copyright offset-md-1 col-md-5 col-sm-12 col-12">
+    <div class="copyright offset-md-1 col-md-5 col-sm-6 col-12 col-12">
       <span>Copyright 2017 @VIVA SHANGO.</span>
       <span>Todos los derechos reservados.</span>
     </div>
-    <div class="right col-md-6 col-sm-12 col-12">
+    <div class="right col-md-6 col-sm-6 col-12 col-12">
       <img src="img/nav/footerlogo.png" alt="">
       <div class="social-links">
         <ul>
@@ -204,11 +282,12 @@
           <li><a href="http://facebook.com/" target="_blank"><i class="icon-vimeo-circled"></i></a>
             </a>
           </li>
-          <li><a href="http://facebook.com/" target="_blank"><i class="icon-vimeo-circled"></i></a></li>
+          <li class="circle-yt"><a href="http://facebook.com/" target="_blank"><i class="icon-youtube-play"></i></a></li>
         </ul>
       </div>
     </div>
   </section>
+  <!-- /FOOTER -->
   <script src="js/underscore-min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

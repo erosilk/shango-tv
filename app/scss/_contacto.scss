@@ -16,8 +16,12 @@ section#contacto {
     background: url("../img/nav/contacto-bg.jpg") center center no-repeat;
     background-size: cover;
     @media screen and (max-width:650px) {
-        img {
-            transform: scale(0.6);
+        a:not(:nth-child(3)),
+        .info>img {
+            transform: scale(0.5);
+        }
+        a>img {
+            margin-top: 0 !important;
         }
     }
 }

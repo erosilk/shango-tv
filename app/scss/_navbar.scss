@@ -26,6 +26,9 @@
         display: inline-flex;
         display: -ms-flexbox;
         float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 
@@ -57,4 +60,56 @@
     background: no-repeat center center;
     background-size: 100% 100%;
     background: url("../img/nav/toggle.png")
+}
+
+.menu-expanded {
+    display: flex;
+}
+
+.menu {
+    box-shadow: $navbar-shadow;
+    display: none;
+    height: 525px;
+    width: 386px;
+    padding: 40px 0;
+    background-color: white;
+    position: fixed;
+    top: $navbar-height;
+    right: 0;
+    z-index: 2;
+    ul {
+        margin-top: 59px;
+    }
+    li {
+        font-family: $futura-font;
+        font-weight: 200;
+        margin-bottom: 32px;
+        &.selected {
+            color: black;
+            position: relative;
+            &::after {
+                content: "";
+                background: url("../img/nav/barramenu.png") no-repeat;
+                position: absolute;
+                top: 39px;
+                left: 0;
+                width: 67px;
+                height: 4px;
+            }
+        }
+    }
+    .icon-cancel {
+        font-size: 23px;
+        margin-left: 35px;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .menu-expanded {
+        display: none;
+    }
+    .navbar .left .navbar-brand {
+        margin-left: 24px;
+    }
 }

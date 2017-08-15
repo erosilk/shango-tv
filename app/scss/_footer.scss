@@ -24,4 +24,19 @@ section#footer {
             margin: 0
         }
     }
+    .icon-youtube-play {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    section#footer {
+        flex-direction: column-reverse;
+        .right {
+            flex-direction: column;
+        }
+        .copyright {
+            text-align: center;
+        }
+    }
 }
