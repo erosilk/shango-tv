@@ -7,6 +7,8 @@ section#footer {
         display: flex;
         flex-direction: column;
         font-family: Raleway;
+        min-height: 175px;
+        justify-content: center; //align-items: center;
         span:first-child {
             color: white;
         }

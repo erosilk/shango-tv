@@ -1,20 +1,36 @@
+section#proyectos {
+    .proyectos-header {
+        height: 171px;
+        .tags {
+            height: 171px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        ul {
+            margin-right: 55.2px;
+        }
+        li {
+            color: black;
+            font-family: $futura-font;
+            font-size: 1rem;
+        }
+    }
+}
+
 .proyectos-header {
-    height: 171px;
+    min-height: 171px;
     background-color: #eaeaea;
     display: flex;
     align-items: center;
     justify-content: center;
-    * {
-        font-size: 48px;
+    h1 {
+        font-size: 1.6rem;
         font-family: "Futura";
         font-weight: 400;
         color: rgb(1, 1, 1);
         text-transform: uppercase;
         line-height: 1.087;
         text-align: center;
-        -moz-transform: matrix( 0.62257818706529, 0, 0, 0.62288708586883, 0, 0);
-        -webkit-transform: matrix( 0.62257818706529, 0, 0, 0.62288708586883, 0, 0);
-        -ms-transform: matrix( 0.62257818706529, 0, 0, 0.62288708586883, 0, 0);
     }
 }
 
@@ -80,7 +96,7 @@
         margin-top: 5%;
         margin-bottom: 20px;
         width: 80%;
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-family: "Futura";
         color: inherit;
         font-weight: bold;
@@ -113,4 +129,23 @@
         font-weight: bold;
         border-radius: 3px;
     }
+}
+
+.tags ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    li {
+        text-transform: capitalize;
+        text-align: left;
+        cursor: pointer;
+    }
+}
+
+.tags ul li.selected {
+    font-weight: 700;
+}
+
+.tags {
+    display: flex;
 }
