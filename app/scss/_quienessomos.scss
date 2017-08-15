@@ -1,0 +1,71 @@
+.top-banner {
+    height: 445px;
+    background-color: black;
+    padding-top: 124px;
+    text-align: center;
+    h1,
+    h2 {
+        font-family: $futura-font;
+        font-weight: 200;
+        color: white;
+        font-size: 3rem;
+    }
+    h3 {
+        font-family: $futura-font;
+        font-weight: 200;
+        color: white;
+        font-size: 2rem;
+    }
+    p {
+        font-family: raleway;
+        color: white;
+        font-weight: normal;
+        margin-top: 20px;
+    }
+}
+
+section#quehacemos {
+    background-color: white;
+    min-height: 794px;
+    padding-top: 90px; //text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    h2 {
+        font-family: $futura-font;
+        font-weight: 600;
+    }
+    img {
+        width: 100%;
+    }
+    .pic {
+        text-align: center;
+        min-height: 300px;
+    }
+    .text {
+        padding-top: 10px;
+        padding: 37px;
+    }
+    .row {
+        margin-bottom: 56px;
+    }
+    @media screen and (max-width: 767px) {
+        .row {
+            margin-bottom: 0px;
+        }
+        .row:last-child {
+            margin-bottom: 40px,
+        }
+    }
+}
+
+.staff-banner {
+    background: url(../img/somos/staff.png) center center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 455px) {
+    .top-banner {
+        min-height: 528px;
+        padding-top: 104px;
+    }
+}
