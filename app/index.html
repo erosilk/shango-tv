@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
 
-
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="plugins/css/fontello.css">
   <link rel="stylesheet" href="plugins/css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -229,18 +231,18 @@
   </section>
   <!-- /PROYECTOS -->
   <!-- DESTACADOS -->
-  <section id="destacados">
-    <a href="http://#">
+  <section id="destacados" class="col-md-12 row">
+    <a class="col-md-4" href="http://#">
       <div class="item-destacado">
         <img src="img/destacados/01.png" alt="">
       </div>
     </a>
-    <a href="http://#">
+    <a class="col-md-4" href="http://#">
       <div class="item-destacado">
         <img src="img/destacados/02.png" alt="">
       </div>
     </a>
-    <a href="http://#">
+    <a class="col-md-4" href="http://#">
       <div class="item-destacado">
         <img src="img/destacados/03.png" alt="">
       </div>
@@ -271,14 +273,14 @@
   </section>
   <!-- /CLIENTES -->
   <!-- FOOTER -->
-  <section id="footer">
-    <div class="copyright offset-md-1 col-md-5 col-sm-6 col-12 col-12">
-      <span>Copyright 2017 @VIVA SHANGO.</span>
+  <section id="footer" class="row">
+    <div class="copyright offset-md-1 col-md-5 col-sm-6">
+      <span>Copyright 2017 @VIVA SHANGO.</span><br/>
       <span>Todos los derechos reservados.</span>
     </div>
-    <div class="right col-md-6 col-sm-6 col-12 col-12">
-      <img src="img/nav/footerlogo.png" alt="">
-      <div class="social-links">
+    <div class="right col-md-6 col-sm-12 row">
+      <div class="footer-logo col-md-6"><img src="img/nav/footerlogo.png" alt=""></div>
+      <div class="social-links col-md-6">
         <ul>
           <li><a href="http://facebook.com/" target="_blank">
               <i class="icon-facebook-circled"></i></a></li>
@@ -292,15 +294,54 @@
     </div>
   </section>
   <!-- /FOOTER -->
-  <script src="js/underscore-min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
-  <script src="css/bootstrap.min.css"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/scripts.min.js"></script>
+  <script type="text/javascript" src="css/bootstrap.min.css"></script>
+  <script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/scripts.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function loadScript(url, callback) {
+        var script = document.createElement("script")
+        script.type = "text/javascript";
+        if (script.readyState) {  //IE
+          script.onreadystatechange = function () {
+            if (script.readyState === "loaded" || script.readyState === "complete") {
+              script.onreadystatechange = null;
+              callback();
+            }
+          };
+        } else {  //Others
+          script.onload = function () {
+            callback();
+          };
+        }
+
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+      }
+
+      loadScript("https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js", function () {
+        $('.carousel').flickity({
+          // options
+          cellAlign: 'center',
+          contain: true,
+        });
+        $('.footer-carousel').flickity({
+          // options
+          cellAlign: 'center',
+          contain: true,
+          freeScroll: true,
+        });
+      });
+
+    });
+  </script>
+
 </body>
 
 </html>

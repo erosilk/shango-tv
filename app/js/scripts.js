@@ -1,8 +1,3 @@
-$(window).resize(function() {
-  var width = $(this).width()
-  var height = $(this).height()
-})
-
 $.fn.extend({
   animateCss: function(animationName) {
     var animationEnd =
@@ -97,15 +92,3 @@ if ($('#proyectos')[0]) {
   })
 }
 
-$('.carousel').flickity({
-  // options
-  cellAlign: 'center',
-  contain: true,
-})
-
-$('.footer-carousel').flickity({
-  // options
-  cellAlign: 'center',
-  contain: true,
-  freeScroll: true,
-})

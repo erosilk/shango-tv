@@ -1,14 +1,10 @@
 section#footer {
-    display: flex;
-    align-items: center;
     min-height: 175px;
     background-color: black;
     .copyright {
-        display: flex;
-        flex-direction: column;
         font-family: Raleway;
         min-height: 175px;
-        justify-content: center; //align-items: center;
+        padding-top: 64px;
         span:first-child {
             color: white;
         }
@@ -17,8 +13,7 @@ section#footer {
         }
     }
     .right {
-        display: flex;
-        align-items: center;
+        padding-top: 64px;
         img {
             height: 25px;
         }
@@ -36,6 +31,7 @@ section#footer {
         flex-direction: column-reverse;
         .right {
             flex-direction: column;
+            text-align: center;
         }
         .copyright {
             text-align: center;

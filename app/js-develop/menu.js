@@ -1,8 +1,3 @@
-$(window).resize(function() {
-  var width = $(this).width()
-  var height = $(this).height()
-})
-
 $.fn.extend({
   animateCss: function(animationName) {
     var animationEnd =

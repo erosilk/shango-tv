@@ -20,10 +20,10 @@ section#proyectos {
 .proyectos-header {
     min-height: 171px;
     background-color: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1 {
+    padding-top: 72px;
+    h1,
+    h2 {
+        width: 100%;
         font-size: 1.6rem;
         font-family: "Futura";
         font-weight: 400;
