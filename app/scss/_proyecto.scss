@@ -23,8 +23,13 @@
     padding-bottom: 53px;
     margin-top: -17px;
     .date {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: gray;
         span {
             font-weight: bold;
+            font-weight: 400;
+            color: black;
         }
     }
     h1 {
