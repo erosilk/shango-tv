@@ -22,15 +22,24 @@ div.button {
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 3px;
+    transition: 0.1s ease all;
     &.light {
         background: black;
         color: white;
         border: 2px solid white;
+        &:hover {
+            background: white;
+            color: #000;
+        }
     }
     &.dark {
         background: white;
         color: black;
         border: 2px solid black;
+        &:hover {
+            background: black;
+            color: #FFFFFF;
+        }
     }
 }
 
