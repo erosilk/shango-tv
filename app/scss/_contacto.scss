@@ -1,157 +1,162 @@
-                section#contacto {
-                    .info {
-                        display: flex;
-                        flex-direction: column !important;
-                        align-items: center;
-                        justify-content: center;
-                        height: 100%;
-                        img {
-                            margin: 10px 0;
-                        }
-                        .telimg {
-                            margin-top: 67px;
-                        }
-                    }
-                    h3 {
-                        font-family: $futura-font;
-                        font-weight: 200;
-                        font-size: 3.5rem;
-                        color: white;
-                    }
-                    h4 {
-                        font-family: $futura-font;
-                        font-weight: 800;
-                        font-size: 2rem;
-                        color: white;
-                        text-align: center;
-                    }
-                    .separador {
-                        max-height: 4px;
-                        min-height: 4px;
-                        margin-top: 10px;
-                        margin-bottom: 29px;
-                        background: url("../img/nav/barraproyecto.png") center center no-repeat;
-                        background-size: cover;
-                    }
-                    .email {
-                        font-family: $futura-font;
-                        font-weight: 200;
-                        font-size: 1.4rem; //text-decoration: underline;
-                        //border-bottom: 2px solid white;
-                        color: white;
-                    }
-                    .tel {
-                        font-family: $futura-font;
-                        font-weight: 200;
-                        font-size: 3rem;
-                        text-align: center;
-                        a {
-                            color: inherit;
-                        }
-                        color: white;
-                    }
-                    .email {
-                        margin-top: 40px;
-                        text-align: center;
-                    }
-                    .email a {
-                        font-family: $futura-font;
-                        font-weight: 200;
-                        font-size: 1.4rem; //text-decoration: underline;
-                        border-bottom: 2px solid white;
-                        color: white;
-                    }
-                    .max-h {
-                        max-height: 36px;
-                    }
-                    height: 585px;
-                    background: url("../img/nav/contacto-bg.jpg") center center no-repeat;
-                    background-size: cover;
-                    @media screen and (max-width:575px) {
-                        .tel {
-                            font-size: 31px;
-                        }
-                        h4 {
-                            font-size: 27px;
-                        }
-                    }
-                    @media screen and (max-width:420px) {
-                        .tel {
-                            font-size: 24px;
-                        }
-                        h4 {
-                            font-size: 27px;
-                        }
-                    }
-                }
+section#contacto {
+    .info {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        img {
+            margin: 10px 0;
+        }
+        .telimg {
+            margin-top: 67px;
+        }
+    }
+    h3 {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 3.5rem;
+        color: white;
+    }
+    h4 {
+        font-family: $futura-font;
+        font-weight: 800;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+    }
+    .separador {
+        max-height: 4px;
+        min-height: 4px;
+        margin-top: 10px;
+        margin-bottom: 29px;
+        background: url("../img/nav/barraproyecto.png") center center no-repeat;
+        background-size: cover;
+    }
+    .email {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 1.4rem; //text-decoration: underline;
+        //border-bottom: 2px solid white;
+        color: white;
+    }
+    .tel {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 3rem;
+        text-align: center;
+        a {
+            color: inherit;
+        }
+        color: white;
+    }
+    .email {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .email a {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 1.4rem; //text-decoration: underline;
+        border-bottom: 2px solid white;
+        color: white;
+    }
+    .max-h {
+        max-height: 36px;
+    }
+    height: 585px;
+    background: url("../img/nav/contacto-bg.jpg") center center no-repeat;
+    background-size: cover;
+    @media screen and (max-width:575px) {
+        .tel {
+            font-size: 31px;
+        }
+        h4 {
+            font-size: 27px;
+        }
+    }
+    @media screen and (max-width:420px) {
+        .tel {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 27px;
+        }
+    }
+}
 
-                .formulario {
-                    input {
-                        border: 2px solid black;
-                    }
-                    textarea {
-                        border: 2px solid black;
-                    }
-                    label {
-                        font-weight: bold;
-                    }
-                    .input-field {
-                        margin-top: 10px;
-                    }
-                    .row {
-                        margin-bottom: 0 !important;
-                    }
-                    button {
-                        //display: flex;
-                        //justify-content: center;
-                        //align-items: center;
-                        height: 30px; //padding: 17px 18px; //width: fit-content; //width: 200px;
-                        margin-top: 10px;
-                        box-sizing: border-box;
-                        font-size: 10pt;
-                        text-transform: uppercase;
-                        font-weight: 600;
-                        border-radius: 3px;
-                        transition: 0.1s ease all;
-                        background: white;
-                        color: black;
-                        border: 2px solid black;
-                        &:hover {
-                            background: black;
-                            color: white;
-                        }
-                    }
-                }
+.formulario {
+    input {
+        border: 2px solid black;
+    }
+    textarea {
+        border: 2px solid black;
+    }
+    label {
+        font-weight: bold;
+    }
+    .input-field {
+        margin-top: 10px;
+    }
+    .row {
+        margin-bottom: 0 !important;
+    }
+    button {
+        //display: flex;
+        //justify-content: center;
+        //align-items: center;
+        height: 30px; //padding: 17px 18px; //width: fit-content; //width: 200px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        font-size: 10pt;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 3px;
+        transition: 0.1s ease all;
+        background: white;
+        color: black;
+        border: 2px solid black;
+        &:hover {
+            background: black;
+            color: white;
+        }
+    }
+}
 
-                section#formulario-contacto {
-                    background-color: white; //min-height: 794px;
-                    padding-top: 50px; //text-align: center;
-                    padding-left: 40px;
-                    padding-right: 40px;
-                    h2 {
-                        font-family: $futura-font;
-                        font-weight: 600;
-                    }
-                    img {
-                        width: 100%;
-                    }
-                    .pic {
-                        text-align: center;
-                        min-height: 300px;
-                    }
-                    .text {
-                        padding-top: 10px;
-                        padding: 37px;
-                    }
-                    .row {
-                        margin-bottom: 56px;
-                    }
-                    @media screen and (max-width: 767px) {
-                        .row {
-                            margin-bottom: 0px;
-                        }
-                        .row:last-child {
-                            margin-bottom: 40px,
-                        }
-                    }
-                }
+section#formulario-contacto {
+    background-color: white; //min-height: 794px;
+    padding-top: 50px; //text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    h2 {
+        font-family: $futura-font;
+        font-weight: 600;
+    }
+    img {
+        width: 100%;
+    }
+    .pic {
+        text-align: center;
+        min-height: 300px;
+    }
+    .text {
+        padding-top: 10px;
+        padding: 37px;
+    }
+    .row {
+        margin-bottom: 56px;
+    }
+    @media screen and (max-width: 767px) {
+        .row {
+            margin-bottom: 0px;
+        }
+        .row:last-child {
+            margin-bottom: 40px,
+        }
+    }
+}
+
+section#map {
+    width: 100%;
+    height: 450px;
+}

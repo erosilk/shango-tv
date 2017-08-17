@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="plugins/css/fontello.css">
   <link rel="stylesheet" href="plugins/css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
 </head>
@@ -137,6 +138,10 @@
       </div>
     </div>
   </section>
+
+  <section id="map">
+  </section>
+
   <section id="footer" class="container-fluid">
     <div class="row container-fluid">
       <div class="copyright offset-md-1 col-md-5 col-sm-12">
@@ -163,7 +168,18 @@
   <script type="text/javascript" src="js/underscore-min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  Try it Yourself »
+
   <script type="text/javascript" src="js/scripts.min.js"></script>
+  <script>
+    var mapOptions = {
+      center: new google.maps.LatLng(51.5, -0.12),
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  </script>
 </body>
 
 </html>
