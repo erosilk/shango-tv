@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
 
-
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="plugins/css/fontello.css">
   <link rel="stylesheet" href="plugins/css/animate.css">
   <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
         <div class="social-links">
           <ul>
             <li><a href="http://facebook.com/" target="_blank">
-                              <i class="icon-facebook-circled"></i></a></li>
+                      <i class="icon-facebook-circled"></i></a></li>
             <li><a href="http://facebook.com/" target="_blank"><i class="icon-twitter-circled"></i></a></li>
             <li><a href="http://facebook.com/" target="_blank"><i class="icon-vimeo-circled"></i></a>
               </a>
@@ -52,13 +54,13 @@
         <li>HOME</li>
       </a>
       <a href="/quienessomos.html">
-        <li class="selected">QUIENES SOMOS</li>
+        <li>QUIENES SOMOS</li>
       </a>
       <a href="/proyectos.html">
         <li>PROYECTOS</li>
       </a>
       <a href="/clientes.html">
-        <li>CLIENTES</li>
+        <li class="selected">CLIENTES</li>
       </a>
       <a href="/contacto.html">
         <li>CONTACTO</li>
@@ -68,7 +70,7 @@
       <div class="social-links">
         <ul>
           <li><a href="http://facebook.com/" target="_blank">
-                                  <i class="icon-facebook-circled"></i></a></li>
+                          <i class="icon-facebook-circled"></i></a></li>
           <li><a href="http://facebook.com/" target="_blank"><i class="icon-twitter-circled"></i></a></li>
           <li><a href="http://facebook.com/" target="_blank"><i class="icon-vimeo-circled"></i></a>
             </a>
@@ -85,63 +87,41 @@
   </div>
   <div class="nav-margin"></div>
 
-  <section id="quienessomos">
-    <div class="top-banner">
-      <h1>¿QUÍENES SOMOS?</h1>
-      <img src="img/nav/quienesbarra.png" alt="barra separadora">
-      <p class="col-md-8 offset-md-2 col-sm-12">
-        Somos una nueva especie en la categoría Agencias de Publicidad. Una Usina de Creación, sin límites de formatos, ni medios.
-        Fusionamos estrategia, arte y tecnología para crear campañas y proyectos multimedia. Vivimos para convertirnos en
-        el mejor socio de nuestros clientes.
-      </p>
+  <section id="clientes-page">
+    <div class="clientes-header">
+      <h1>NUESTROS CLIENTES</h1>
     </div>
-  </section>
-  <section id="quehacemos">
-    <div class="row">
-      <div style="background: url(img/somos/quehacemos.png) center center no-repeat;
-      background-size: cover" class="pic col-md-6 col-sm-12">
+    <div class="grid container-fluid">
+      <div class="row">
+        <div style="background: url('../img/nav/clientes/01.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>HSBC</span>
+        </div>
+        <div style="background: url('../img/nav/clientes/02.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>Skullcandy</span>
+        </div>
+        <div style="background: url('../img/nav/clientes/03.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>Massalin Particulares</span>
+        </div>
+        <div style="background: url('../img/nav/clientes/04.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>Personal</span>
+        </div>
+        <div style="background: url('../img/nav/clientes/05.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>Banco Provincia</span>
+        </div>
+        <div style="background: url('../img/nav/clientes/06.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>Quilmes</span>
+        </div>
+        <div style="background: url('../img/nav/clientes/07.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>AFA</span>
+        </div>
+        <div style="background: url('../img/nav/clientes/08.png') center center no-repeat; background-size: 70%;" class="cliente col-md-4 col-lg-3">
+          <span>Meridional Seguros</span>
+        </div>
       </div>
-      <div class="text col-md-6 col-sm-12">
-        <h2>¿QUÉ HACEMOS?</h2>
-        <p>Nos involucramos en el negocio de nuestros clientes y traducimos sus objetivos a estrategias de comunicación. <br/>          Creamos ideas y proyectos 360º, con un fuerte foco en la tecnología. <br/>Nos dedicamos a pensar y hacer acciones
-          que tengan la capacidad de integrar los medios de comunicación.
 
-        </p>
-      </div>
     </div>
-    <div class="row">
+  </section>
 
-      <div class="text col-md-6 col-sm-12">
-        <h2>FILOSOFÍA</h2>
-        <p>Creemos que la innovación empieza por replantearse todo. Creemos que una idea es buena si su contenido es relevante
-          y sorprendente. Creemos que los clientes esperan propuestas de valor tangible. Creemos que el mayor potencial de
-          una marca o un proyecto radica en tener un propósito social concreto.
-        </p>
-      </div>
-      <div style="background: url(img/somos/filosofia.png) center center no-repeat;
-      background-size: cover" class="pic col-md-6 col-sm-12">
-      </div>
-    </div>
-  </section>
-  <section id="staff">
-    <div class="top-banner staff-banner">
-      <h2>STAFF</h2>
-      <img src="img/nav/quienesbarra.png" alt="barra separadora">
-      <p class="col-md-8 offset-md-2 col-sm-12">
-        Nos une un concepto de vida: responsabilidad y excelencia. <br/> Cada uno de nosotros es un inventor con una insaciable
-        hambre de gloria, que quiere crecer y conquistar más logros. Vivimos para intentar llegar a lo más alto; y nuestro
-        triunfo, empieza en tu éxito.
-      </p>
-    </div>
-    <div class="equipo">
-      <h3>NUESTRO EQUIPO</h3>
-      <ul class="personas">
-        <li class="persona">
-          <div class="foto-persona"></div>
-        </li>
-      </ul>
-    </div>
-  </section>
   <!-- FOOTER -->
   <section id="footer" class="container-fluid">
     <div class="row container-fluid">
@@ -167,14 +147,12 @@
 
   </section>
   <!-- /FOOTER -->
-  <script src="js/underscore-min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <script type="text/javascript" src="js/underscore-min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
-  <script src="css/bootstrap.min.css"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="js/scripts.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/scripts.min.js"></script>
 </body>
 
 </html>

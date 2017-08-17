@@ -80,7 +80,7 @@ if ($('#proyectos')[0]) {
   $('.proyectos-list').isotope({
     // options
     itemSelector: '.proyecto',
-    layoutMode: 'fitRows',
+    layoutMode: 'masonry',
     transitionDuration: 0,
   })
 
