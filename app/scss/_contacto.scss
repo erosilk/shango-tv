@@ -12,6 +12,24 @@ section#contacto {
             margin-top: 67px;
         }
     }
+    .telefono-img {
+        background: url("../img/nav/nro.png") center center no-repeat;
+        background-size: contain;
+        height: 36px;
+        margin-top: 20px;
+    }
+    .email {
+        margin-top: 40px;
+    }
+    .oficina-img {
+        background: url("../img/nav/oficina.png") center center no-repeat;
+        background-size: contain;
+        max-height: 138px;
+        height: 138px;
+    }
+    .max-h {
+        max-height: 36px;
+    }
     height: 585px;
     background: url("../img/nav/contacto-bg.jpg") center center no-repeat;
     background-size: cover;
