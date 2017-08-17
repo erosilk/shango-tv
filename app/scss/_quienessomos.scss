@@ -58,9 +58,56 @@ section#quehacemos {
     }
 }
 
-.staff-banner {
-    background: url(../img/somos/staff.png) center center no-repeat;
-    background-size: cover;
+section#staff {
+    .staff-banner {
+        background: url(../img/somos/staff.png) center center no-repeat;
+        background-size: cover;
+    }
+    .equipo {
+        padding-top: 70px;
+        h3 {
+            text-align: center;
+            font-family: $futura-font;
+            font-weight: normal;
+            margin-bottom: 50px;
+        }
+        .foto-persona {
+            min-height: 200px;
+            margin-bottom: 15px;
+        }
+        .persona {
+            text-align: center;
+            position: relative;
+            margin-bottom: 25px;
+            padding: 20px;
+            transition: 0.2s ease all;
+            &:hover {
+                .text {
+                    opacity: 1;
+                }
+                background-color: rgba(0, 0, 0, 0.08);
+            }
+        }
+        .nombre {
+            text-align: center;
+            font-family: $futura-font;
+            font-weight: bolder;
+            color: black;
+        }
+        p {
+            margin: 0;
+        }
+        .text {
+            opacity: 0;
+            transition: 0.2s ease all;
+        }
+        .puesto {
+            font-family: Raleway;
+            font-size: 1rem;
+            font-style: italic;
+            color: black;
+        }
+    }
 }
 
 @media screen and (max-width: 455px) {
