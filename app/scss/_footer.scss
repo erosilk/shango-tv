@@ -33,7 +33,22 @@ section#footer {
             flex-direction: column;
             text-align: center;
         }
+        .right .social-links ul {
+            margin: 10px 0;
+            padding: 0;
+        }
         .copyright {
+            margin-bottom: 16px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section#footer {
+        flex-direction: column-reverse;
+        .right {
+            flex-direction: column;
             text-align: center;
         }
         .right .social-links ul {
@@ -42,6 +57,15 @@ section#footer {
         }
         .copyright {
             margin-bottom: 16px;
+            text-align: center;
         }
+    }
+    section#footer .copyright {
+        font-family: Raleway;
+        min-height: 21px;
+        padding-top: 24px;
+    }
+    section#footer .right {
+        padding-top: 32px;
     }
 }

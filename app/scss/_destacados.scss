@@ -2,13 +2,13 @@ section#destacados {
     //position: relative;
     margin-bottom: -69px;
     z-index: 1; //text-align: center;
-    >a:first-child>.item-destacado {
+    a:first-child>.item-destacado {
         border-top: 5.44px solid #f37121;
     }
-    >a:nth-child(2)>.item-destacado {
+    a:nth-child(2)>.item-destacado {
         border-top: 5.44px solid #ed1163;
     }
-    >a:nth-child(3)>.item-destacado {
+    a:nth-child(3)>.item-destacado {
         border-top: 5.44px solid #6f559b;
     }
     .item-destacado {
@@ -17,6 +17,7 @@ section#destacados {
         justify-content: center;
         align-items: center;
         height: 117px;
+        margin-top: 10px;
         background-color: #f1f1f1;
         transition: 0.1s ease background-color;
         &:hover {
