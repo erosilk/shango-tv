@@ -12,20 +12,54 @@ section#contacto {
             margin-top: 67px;
         }
     }
-    .telefono-img {
-        background: url("../img/nav/nro.png") center center no-repeat;
-        background-size: contain;
-        height: 36px;
-        margin-top: 20px;
+    h3 {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 3.5rem;
+        color: white;
+    }
+    h4 {
+        font-family: $futura-font;
+        font-weight: 800;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+    }
+    .separador {
+        max-height: 4px;
+        min-height: 4px;
+        margin-top: 10px;
+        margin-bottom: 29px;
+        background: url("../img/nav/barraproyecto.png") center center no-repeat;
+        background-size: cover;
+    }
+    .email {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 1.4rem; //text-decoration: underline;
+        //border-bottom: 2px solid white;
+        color: white;
+    }
+    .tel {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 3rem;
+        text-align: center;
+        a {
+            color: inherit;
+        }
+        color: white;
     }
     .email {
         margin-top: 40px;
+        text-align: center;
     }
-    .oficina-img {
-        background: url("../img/nav/oficina.png") center center no-repeat;
-        background-size: contain;
-        max-height: 138px;
-        height: 138px;
+    .email a {
+        font-family: $futura-font;
+        font-weight: 200;
+        font-size: 1.4rem; //text-decoration: underline;
+        border-bottom: 2px solid white;
+        color: white;
     }
     .max-h {
         max-height: 36px;
@@ -33,13 +67,20 @@ section#contacto {
     height: 585px;
     background: url("../img/nav/contacto-bg.jpg") center center no-repeat;
     background-size: cover;
-    @media screen and (max-width:650px) {
-        a:not(:nth-child(3)),
-        .info>img {
-            transform: scale(0.5);
+    @media screen and (max-width:575px) {
+        .tel {
+            font-size: 31px;
         }
-        a>img {
-            margin-top: 0 !important;
+        h4 {
+            font-size: 27px;
+        }
+    }
+    @media screen and (max-width:420px) {
+        .tel {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 27px;
         }
     }
 }
